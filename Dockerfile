@@ -1,6 +1,6 @@
-FROM intercom/rtbkit:latest
+FROM onokonem/rtbkit:latest
 
 ADD zookeeper /zookeeper
-ADD zoo.cfg /redis.conf
+ADD zoo.cfg /opt/local/bin/zookeeper/conf/zoo.cfg
 
 CMD ["/zookeeper"]
